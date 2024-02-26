@@ -1,0 +1,23 @@
+//Usando GO
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var (
+		x int
+		y int
+		z int 
+	)
+
+	fmt.Print("x: ")
+	fmt.Scan(&x)
+	fmt.Print("y: ")
+	fmt.Scan(&y)
+  z = x + y;
+	fmt.Printf("%d\n", z)
+
+}
