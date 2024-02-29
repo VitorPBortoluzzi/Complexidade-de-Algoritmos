@@ -15,7 +15,7 @@ func main() {
 
 
 /*------------------
-|main		|	
+|main		|	<Ponteiro>
 |mySoma		|	return func (int64)
 |a			|	int64
 |b			|	int64
