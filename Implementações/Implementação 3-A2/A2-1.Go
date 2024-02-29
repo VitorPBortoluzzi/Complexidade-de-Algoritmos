@@ -19,5 +19,5 @@ func main() {
 |mySoma		|	return func (int64)
 |a			|	int64
 |b			|	int64
-|instruções	|
+|instruções	|	("soma")("impressão")("Atribuição")
 */
