@@ -1,0 +1,51 @@
+================================================================================================================================================================================================
+Arquiteturas RISC & CISC: https://en.wikipedia.org/wiki/Reduced_instruction_set_computer
+
+RISC:In computer science, a reduced instruction set computer (RISC) is a computer architecture designed to simplify the individual instructions given to the computer to accomplish tasks.
+A RISC computer might require more instructions (more code) in order to accomplish a task because the individual instructions are written in simpler code. The goal is to offset the need to process more instructions by increasing the speed of each instruction, in particular by implementing an instruction pipeline, which may be simpler to achieve given simpler instructions.
+
+CISC:A complex instruction set computer (CISC) is a computer architecture in which single instructions can execute several low-level operations (such as a load from memory, an arithmetic operation, and a memory store) or are capable of multi-step operations or addressing modes within single instructions.The term was retroactively coined in contrast to reduced instruction set computer (RISC) and has therefore become something of an umbrella term for everything that is not RISC, where the typical differentiating characteristic is that most RISC designs use uniform instruction length for almost all instructions, and employ strictly separate load and store instructions.
+=================================================================================================================================================================================================
+
+RISC:RISC (acrônimo de Reduced Instruction Set Computer; em português, "Computador com um conjunto reduzido de instruções") é uma linha de arquitetura de 
+processadores que favorece um conjunto simples e pequeno de instruções que levam aproximadamente a mesma quantidade de tempo para serem executadas. 
+
+CISC:CISC(Complex Instruction Set Computer, em português, "Computador com um conjunto complexo de instruções") possui um conjunto 
+maior de instruções especializadas, algumas delas raramente usadas pelos programas.
+
+
+
+=================================================================================================================================================================================================
+Fazer tabela de calculo de memória:
+
+
+int multiplica (int a, int b){
+    return a*b;
+    }
+-----------------------------------------------------
+|multiplica	|	return ( int )	        		    |
+|a			|	int							        |
+|b			|	int								    |
+|instruções	|	("multiplicação")("Atribuição")	    |
+-----------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+int multiplica (int a, int b){
+    int resultado=0;
+    for(int i = 0; i < b; i++){
+        resultado+=a;
+    }
+    return resultado;
+}
+
+-----------------------------------------------------
+|multiplica	|	return ( resultado(int))            |
+|i          |   int                                 |
+|resultado  |   int        		                    |
+|a			|	int							        |
+|b			|	int								    |
+|instruções	|	("Soma")("for")("Atribuição")	    |
+-----------------------------------------------------
+
+=================================================================================================================================================================================================
