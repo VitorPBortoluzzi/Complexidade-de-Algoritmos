@@ -16,9 +16,6 @@ print(lista)
 ordena(lista)
 print(lista)
 
-# 1 var --> 16bits
-# 1 instrução --> 16bits
-
 """ 
 ------------------------------------------
 lista = [10,8,3,15,4] (7 espaços??? <16bits?>)
