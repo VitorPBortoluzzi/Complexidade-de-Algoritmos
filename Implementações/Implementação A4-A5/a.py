@@ -64,7 +64,7 @@ ordena(lista)
 |While          |           <none>                                  |
 |Comparação <   |           <none>                                  |
 |Subtração      |           <none>                                  |
-|if             |   instrução <1 espaço>                            |
+|if             |   instrução <1 espaço>  <Condição>                |
 |Comparação >   |   instrução <1 espaço>                            |   
 |Adição         |   instrução <1 espaço>                            |
 
