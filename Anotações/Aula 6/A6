@@ -1,0 +1,31 @@
+Complexidade do Tempo:
+    O que o tempo de execução?
+        -   O tempo que um algoritmo leva para ser executado desde o ínicio até o fim.
+        -   Um indicador crucial da eficiência e desempenho do algoritmo.
+    Por que medir o tempo de execução?
+        -   Identificar gargalos e pontos de ineficiência no código
+        -   Comparar diferentes algoritmos e escolher o mais adequado para a tarefa
+        -   Otimizar o código para melhorar sua performance e escalabilidade.
+
+Determinista
+    -   100% de certeza que vai acontecer
+Estocástico    
+    - Aleatório - probabilidade != 100%
+
+
+
+Funções de tempo em linguagens de programação
+    time.time() em python;
+    clock() em C/c++
+    System.nanoTime em java
+
+Bibliotecas e ferramentas especificas:
+    timeit em python
+    Microbenchmarck em java
+    perf em Linux
+
+Algoritmo proposto:
+    Recebendo um texto, ele conte o numero de ocorrencias de cada caracter.
+    Gera uma lista com as ocorrencias.
+    Marcar o tempo de inicio e fim.
+    
