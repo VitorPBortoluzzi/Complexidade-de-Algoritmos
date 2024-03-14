@@ -1,20 +1,3 @@
-"""
-Construir um algoritmo que receba como parâmetro um texto e retorne o numero de ocorrências de cada caractere (ordenado pelos caracteres).
-Construir um contador de tempo de execução antes e depois da função que contabiliza as ocorrências.
-O texto teste encontra-se anexado a tarefa.
-"""
-import time
-
-def contar_caracters(texto):
-    ocorrencia_caracter = {}
-    for c in texto:
-        if c in ocorrencia_caracter:
-            ocorrencia_caracter[c] += 1
-        else:
-            ocorrencia_caracter[c] = 1
-    return ocorrencia_caracter 
-
-texto = """
 Um retrato das mulheres na pesquisa
 Assessoria de Comunicação (ASSECOM) em 08/03/2024
 
@@ -43,26 +26,3 @@ UFN e a Pesquisa
 A produção científica na Universidade Franciscana (UFN) se iniciou em meados de 2004, através da criação do Mestrado profissionalizante em Ensino de Física e de Matemática. A partir do crescimento em conjunto com a criação de processos, produtos e demais tecnologias, foi implantado, o Programa de Pós-graduação em Nanociências: mestrado (2006) e doutorado (2012). Em 2014, se fez a concretização do Programa de Pós-graduação em Ensino de Ciências e Matemática, nas modalidades Mestrado e Doutorado. No ano de 2015 se iniciou o funcionamento do Mestrado Profissional em Saúde Materno Infantil e, em 2016, Mestrado Acadêmico em Ciências da Saúde e da Vida e o Mestrado em Ensino de Humanidades e Linguagens.
 
 Na Universidade Franciscana, o público feminino desempenha papéis de destaque em várias áreas acadêmicas. Em 2023 a UFN contava com um total de 346 pesquisadores, sendo eles docentes e discentes, desse grupo temos cerca de 244 mulheres. Para a Vice-reitora, pesquisadora e professora, Solange Binotto Fagan, um cenário de reconhecimento se faz perceptível diante das produções científicas. “Na área de Nanociências, aproximadamente 70% dos pesquisadores, incluindo docentes e estudantes, são mulheres, engajadas em atividades científicas de impacto internacional. Esses números refletem o ambiente propício à equidade de gênero e ao reconhecimento do talento das mulheres cientistas aqui na UFN”, finaliza a docente.
-"""
-inicio_tempo = time.time_ns()
-resultado_ocorrencias = contar_caracters(texto)
-print("\nOcorrências de cada caractere:")
-for c, ocorrencia_caracter in resultado_ocorrencias.items():
-    print(f"{c}': {ocorrencia_caracter}")
-final_tempo = time.time_ns()
-tempo_exec = final_tempo - inicio_tempo
-print(tempo_exec)
-
-
-"""
-dicionario = {}
-arquivo = open(nomeArquivo,encoding="UTF-8")
-linhas = arquivo.readlines()
-for linha in linhas:
-    palavras = linha.split(' ')
-    for palavra in palavras:
-        if c in dicionario:
-            dicionario[c] += 1
-        else:
-            dicionario[c] = 1
-"""

@@ -4,15 +4,17 @@ Construir um contador de tempo de execução antes e depois da função que cont
 O texto teste encontra-se anexado a tarefa.
 """
 import time
-
-def contar_caracters(texto):
-    ocorrencia_caracter = {}
-    for c in texto:
-        if c in ocorrencia_caracter:
-            ocorrencia_caracter[c] += 1
-        else:
-            ocorrencia_caracter[c] = 1
-    return ocorrencia_caracter 
+dicionario = {}
+def contar_caracters(nomeArquivo):
+    arquivo = open(nomeArquivo,encoding="UTF-8")
+    linhas = arquivo.readlines()
+    for linha in linhas:
+        palavras = linha.split(' ')
+        for palavra in palavras:
+            if palavra in dicionario:
+                dicionario[palavra] += 1
+            else:
+                dicionario[palavra] = 1
 
 texto = """
 Um retrato das mulheres na pesquisa
@@ -45,10 +47,10 @@ A produção científica na Universidade Franciscana (UFN) se iniciou em meados 
 Na Universidade Franciscana, o público feminino desempenha papéis de destaque em várias áreas acadêmicas. Em 2023 a UFN contava com um total de 346 pesquisadores, sendo eles docentes e discentes, desse grupo temos cerca de 244 mulheres. Para a Vice-reitora, pesquisadora e professora, Solange Binotto Fagan, um cenário de reconhecimento se faz perceptível diante das produções científicas. “Na área de Nanociências, aproximadamente 70% dos pesquisadores, incluindo docentes e estudantes, são mulheres, engajadas em atividades científicas de impacto internacional. Esses números refletem o ambiente propício à equidade de gênero e ao reconhecimento do talento das mulheres cientistas aqui na UFN”, finaliza a docente.
 """
 inicio_tempo = time.time_ns()
-resultado_ocorrencias = contar_caracters(texto)
+contar_caracters("texto_contagem.txt")
 print("\nOcorrências de cada caractere:")
-for c, ocorrencia_caracter in resultado_ocorrencias.items():
-    print(f"{c}': {ocorrencia_caracter}")
+for palavra in dicionario:
+    print(f"{palavra}'")
 final_tempo = time.time_ns()
 tempo_exec = final_tempo - inicio_tempo
 print(tempo_exec)
