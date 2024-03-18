@@ -1,11 +1,71 @@
 Contagem de instruções
     Atribuições:
-        - Direta
+        - Direta(=)
         - Indireta:
             * Retorno de função
             * Passagem de parâmetros
-            * Incremento/decremento
+                --nome = palavra.len(matriz(a.size(a.position(valor))));  = 1Passagem de parâmetro direto & 4 Passagens de parâmetros indiretas. <Java>
+                -- SOUT("Texto"+str+"!");                           = 1 Passagem de parâmetro.   <Concatenação de String Java>
+                -- print("Texto",str,"!")                           = 3 Passagem de parâmetro.   <,><Python - Concatenação com virgula(3) - se for com + apenas 1 parâmetro>
+            * Incremento/decremento:
+                x++; --> x = x + 1
+                y--; --> y = y - 1 
+
+                x+=1 --> x = x + 1
+                y-=1 --> y = y - 1
     Comparações
 
 
-    Porque contando só atribuições e comparações, e não contando IRQ's, Alocação de ponteiro
+Exemplos:
+1    public int[] constroiLista(int tamanho){
+2        int lista[] = new int [tamanho];
+3        for (int x=tamanho,y=0;x>0;x--;y++) {
+4            lista[y]=x;    
+5        }
+6        return lista;
+7    }
+
+
+1    public int[] constroiLista(int tamanho){                   --> 1 Atribuição indireta                                           Errada
+2        int lista[] = new int [tamanho];                       --> 1 Atribuição direta;
+3        for (int x=tamanho,y=0;x>0;x--;y++) {                  --> 2 Atribuição direta; 1 Comparação; 1 Decremento, 1 Encremento
+4            lista[y]=x;                                        --> 1 Atribuição direta
+5        }  
+6        return lista;                                          --> 1 Atribuição indireta - returno de função
+7    }
+
+1    public int[] constroiLista(int tamanho){                   --> declaração de variavel != passagem de parâmetro/atribuição
+2        int lista[] = new int [tamanho];                       --> entre [] não é parâmetro/atribuição
+3        for (int x=tamanho,y=0;x>0;x--;y++) {                  -->
+4            lista[y]=x;                                        --> entre [] não é parâmetro/atribuição
+5        }
+6        return lista;                                          -->
+7    }
+
+====================================================================================================================================
+Localizar nos códigos feitos
+
+lista = [10,8,3,15,4]  
+
+def ordena(listagem):                                                                   --> (declaração de variavel)
+    i = 0                                                                               --> atribuição direta
+    j = 0                                                                               --> atribuição direta
+    tamanho = len(listagem)                                                             --> atribuição direta
+    while j<(tamanho-1):                                                                --> comparação
+        while i<(tamanho-1):                                                            --> comparação
+            if listagem[i]>listagem[i+1]:                                               --> comparação
+                listagem[i],listagem[i+1] = listagem[i+1],listagem[i]                   --> 2 atribuição
+            i+=1                                                                        --> incremento
+        i= 0                                                                            --> atribuição direta
+        j+=1                                                                            --> incremento
+    return listagem                                                                     --> atribuição indireta                                                                     
+ordena(lista)                                                                           --> passagen de parâmetro
+
+
+
+
+
+
+
+
+    Porque contando só atribuições e comparações, e não contando IRQ's, Alocação de ponteiro.
