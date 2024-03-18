@@ -1,0 +1,11 @@
+Contagem de instruções
+    Atribuições:
+        - Direta
+        - Indireta:
+            * Retorno de função
+            * Passagem de parâmetros
+            * Incremento/decremento
+    Comparações
+
+
+    Porque contando só atribuições e comparações, e não contando IRQ's, Alocação de ponteiro
