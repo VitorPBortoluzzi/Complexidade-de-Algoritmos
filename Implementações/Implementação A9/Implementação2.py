@@ -36,7 +36,7 @@ def teste(nr_teste):
         temp.append(fim-ini)
 
     ax,fig=plt.subplots()
-    plt.title('Templo de exec')
+    plt.title('Tempo de exec')
     plt.xlabel('Numero Testes')
     plt.ylabel('Tempos:')
     plt.plot(x,temp,label='List')

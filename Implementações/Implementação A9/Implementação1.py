@@ -18,7 +18,6 @@ def mult_listas():
 
 tamanho = int(input("Digite o tamanho das Listas: "))
 
-
 def teste(nr_teste):
     x=(range(nr_teste))
     temp = [] #Tempo execuções
@@ -38,4 +37,3 @@ def teste(nr_teste):
 
 x_testes = int(input("Digite o numero de testes: "))
 teste(x_testes)
-
