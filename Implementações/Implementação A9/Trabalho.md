@@ -1,0 +1,8 @@
+## Trabalho(3 Pontos) - Individual;
+* 3 Implementações
+    - Implementar um algoritmo para multiplicar dois vetores (litas) do mesmo tamanho
+    - Implementar um algoritmo que multiplique um vetor (lista) com uma matriz quadrada adequada
+    - Implementar um algoritmo que multiplique uma matriz por outra matriz (ambas quadradas e de mesmo tamanho)
+
+        * OBS: Os tamanhos devem variar para n=5,10,50,100,500,1000,1500;
+        * OBS: Construir os gráficos de execução para os três algoritmos.
