@@ -1,0 +1,38 @@
+O que é um algoritmo?
+Como um algoritmo funciona?
+Oque é a complexidade de algoritmo? Quantidade de recurso computacional necessário.
+Funções e Métodos são estáticos(iguais) na hora de executar? Não.
+
+"Algoritmo Genético"
+
+Categoria de Algoritmos
+    Ordenação
+    Busca
+    String
+    Numéricos
+
+Tecnicas de Medição:
+    Complexidade Temporal:Está associado á qual recurso computacional = Tempo de Processamento/Processador.
+
+    Complexidade Espacial:Está associado á qual recurso computacional = Espaço de Memória(Todo tipo de Memória)
+
+Estratégia de teste quando faz analise de desempenho:
+    Qual principal problema quando for fazar uma analise de desempenho: Como vou avaliar? = Estratégia de Teste.
+
+Análise de Memória: Aula 03;
+Tipos de utilização de Memória:
+    Declarações
+    Atribuições
+    Retornos de Função
+    Passagem de Parâmetro
+
+Contagem de Instruções:
+    Atribuições:
+        Atribuições Diretas
+        Atribuições indiretas 
+            Retorno de função
+            Passagem de parâmetros
+            Incremento/decremento
+
+    Comparações
+    (São analisadas por que são os 2 tipos de Instruções que tomam mais tempo de execução)
