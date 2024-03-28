@@ -25,7 +25,7 @@ def lista_matriz(tamanho):
 def teste(tamanhos, nr_teste):
     for tamanho in tamanhos:
         temp = [] # Tempo execuções
-        for _ in range(nr_teste):
+        for i in range(nr_teste):
             ini = time.time_ns()
             lista_matriz(tamanho)
             fim = time.time_ns()
