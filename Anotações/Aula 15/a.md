@@ -24,7 +24,7 @@ void selecao (int vet, int tam){
 ---
 Calculo:
 
-1º For(+Interno): 
+### 1º For(+Interno): 
 ```c
 for (j=i+1; j<=n; j++){
     if (vet[j] < vet[min])
@@ -44,7 +44,7 @@ for (j=i+1; j<=n; j++){
     3N+2
 ```
 ___
-2º For:
+### 2º For:
 ```c
 for (i=1; i<=n-1; i++){
         min = i;
@@ -65,4 +65,13 @@ Bloco = Pior Caso:4N+2
 1+N+1+N+(4N²+2N+4N)
 4N²+8N+2
 ```
-**4N²+8N+2
+**4N²+8N+2**
+
+```
+Bloco = Melhor Caso:3N+2 
+[(3N+2)+4]
+1+(N+1)*1 + N\*1 + N * bloco 
+1+N+1+N+(3N²+2N+4N)
+3N²+8N+2
+```
+**3N²+8N+2**
