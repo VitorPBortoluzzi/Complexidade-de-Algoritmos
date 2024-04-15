@@ -1,4 +1,5 @@
 # Regras:
+## 0ª Identificar instruções de atribuição e comparação
 
 ## 1ªRegra: Calcular o laço mais interno;
 ```C
