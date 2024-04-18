@@ -83,4 +83,8 @@ void shellSort(int *vet, int size) {
                 // }
 }
 
+Cálculo:
+1 + (2N+1) +  (4N³+7N²+4N+1)
+4N³+7N²+6N+3
+
 ```
