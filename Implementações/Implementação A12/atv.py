@@ -46,7 +46,7 @@ def teste(nr_Testes):
     plt.legend()                    
     plt.show()              
 
-teste(5)
+teste(500)
 print(nrAtrib)
 print(x)
 
