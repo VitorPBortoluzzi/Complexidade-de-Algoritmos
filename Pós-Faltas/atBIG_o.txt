@@ -1,0 +1,96 @@
+# Instruções: 4N^3 + 6N^2 + 4N + 4 || (O(F(n)) = N^3)
+def shell_sort(arr):
+    n = len(arr)
+    steps = 2
+    gap = n // 2
+    steps += 1
+    while gap > 0:
+        steps += 1  # while gap > 0
+        for i in range(gap, n):
+            steps += 2  # for loop start and comparison
+            temp = arr[i]
+            steps += 1
+            j = i
+            steps += 1
+            while j >= gap and arr[j - gap] > temp:
+                steps += 3  # while loop comparison, arr[j-gap], arr[j]
+                arr[j] = arr[j - gap]
+                steps += 1
+                j -= gap
+                steps += 1
+            arr[j] = temp
+            steps += 1
+        gap //= 2
+        steps += 1
+    return steps
+
+# Instruções: 4N^2 + 3N + 2 || (O(F(n)) = N^2)
+def bubble_sort(arr):
+    n = len(arr)
+    steps = 1
+    for i in range(n):
+        steps += 2  # for loop start and comparison
+        for j in range(0, n - i - 1):
+            steps += 3  # for loop start, comparison, n-i-1 calculation
+            if arr[j] > arr[j + 1]:
+                steps += 1  # if comparison
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                steps += 2
+    return steps
+
+# Instruções: 10N^2 + 10N + 6 || (O(F(n)) = N^2)
+def shaker_sort(arr):
+    n = len(arr)
+    steps = 5
+    swapped = True
+    start = 0
+    end = n - 1
+    while swapped:
+        steps += 1  # while swapped
+        swapped = False
+        steps += 1
+        for i in range(start, end):
+            steps += 2  # for loop start and comparison
+            if arr[i] > arr[i + 1]:
+                steps += 1  # if comparison
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                steps += 2
+                swapped = True
+                steps += 1
+        if not swapped:
+            steps += 1  # if not swapped
+            break
+        swapped = False
+        steps += 1
+        end -= 1
+        steps += 1
+        for i in range(end - 1, start - 1, -1):
+            steps += 3  # for loop start, comparison, and decrement
+            if arr[i] > arr[i + 1]:
+                steps += 1  # if comparison
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                steps += 2
+                swapped = True
+                steps += 1
+        start += 1
+        steps += 1
+    return steps
+
+# Instruções: 4N^2 + 6N + 3 || (O(F(n)) = N^2)
+def insertion_sort(arr):
+    steps = 0
+    for i in range(1, len(arr)):
+        steps += 3  # for loop start, comparison, and increment
+        key = arr[i]
+        steps += 1
+        j = i - 1
+        steps += 1
+        while j >= 0 and key < arr[j]:
+            steps += 3  # while loop comparison, key, and arr[j]
+            arr[j + 1] = arr[j]
+            steps += 1
+            j -= 1
+            steps += 1
+        arr[j + 1] = key
+        steps += 1
+    return steps

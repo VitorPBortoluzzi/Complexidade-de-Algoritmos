@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Instruções: 4N^3 + 6N^2 + 4N + 4
+# O(f(N)) = N^3/2
 def shell_sort(arr):
     n = len(arr)
     steps = 2
@@ -29,6 +30,7 @@ def shell_sort(arr):
     return steps
 
 # Instruções: 4N^2 + 3N + 2
+# O(f(N)) = N²
 def bubble_sort(arr):
     n = len(arr)
     steps = 1
@@ -43,6 +45,7 @@ def bubble_sort(arr):
     return steps
 
 # Instruções: 10N^2 + 10N + 6
+# O(f(N)) = N²
 def shaker_sort(arr):
     n = len(arr)
     steps = 5
@@ -81,6 +84,7 @@ def shaker_sort(arr):
     return steps
 
 # Instruções: 4N^2 + 6N + 3
+# O(f(N)) = N²
 def insertion_sort(arr):
     steps = 0
     for i in range(1, len(arr)):
