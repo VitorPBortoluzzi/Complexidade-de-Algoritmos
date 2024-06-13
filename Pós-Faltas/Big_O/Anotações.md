@@ -7,3 +7,6 @@
 **g(N) = 3N³ + 2N² + 4N + 7 ---> O(g(N))=N³**
 
 **h(N)=5 --:> O(h(N))=1**
+
+# Propriedades:
+* i) Sendo f(N), O(f(N))=Maior expoente
