@@ -15,6 +15,20 @@ for(i=0;i=j;i>m && j<100;i++,j++,k--){}
 2+2N+2+3N+3N  
 8N+4 
 ```
+1 + N+1 + N + N*
+Pior Caso:
+    6N+5
+Melhor
+    4N+2
+
+1 + N+1 + N + N*4
+Pior
+6N +2 + 4
+    6N+6
+Melhor
+    6N + 4
+
+
 
 
 Laço em C do Google Sorte  
